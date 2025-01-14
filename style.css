@@ -1,0 +1,192 @@
+/* General Reset */
+body {
+    /* Chat GPT incorrectly assumed the correct font family was arial, I feel like it should be better at identifying fonts */
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header */
+#header {
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    /* The color for the gradient here doesn't look exactly right but I figured it was close */
+    background: linear-gradient(to right, #0077a8, #33b5e5);
+    border-radius: 10px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#header p {
+    margin: 5px 0 0;
+    /* I chose the font size and I didn't do it through any fancy way, I just tested with webdev tools until something looked nice */
+    font-size: 0.9em;
+    text-align: left;
+    font-style: italic;
+}
+
+/* Main Content */
+#main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4, h5, h6 {
+    color: #005f80;
+    font-style: bold;
+}
+
+/* I do not know how to make this line shorter without making another block */
+.line {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a3e5f2;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+ul li::marker {
+    color: #00b2d5;
+}
+
+.important {
+    font-weight: bold;
+    color: #006591;
+    background-color: #90e0ef;
+    padding: 1px;
+    border-radius: 5px;
+    /* I was going to do a nice easy 1px all around but I noticed the sides looked longer */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #005f80;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Quiz Section */
+#quiz-section {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* This doesn't get the quiz section looking quite like I want but I don't know how to fix it without changing the HTML and putting the heading and image in a div */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#quiz-section img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#quiz-section h2 {
+    color: #00796b;
+}
+
+#quiz-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#quiz-section input[type="text"] {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+}
+
+#quiz-section input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#quiz-section input[type="submit"]:hover {
+    background-color: #005f56;
+}
+
+/* Table */
+#species-table {
+    margin: auto;
+    text-align: center;
+    width: 800px;
+}
+
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#species-table th, #species-table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#species-table th {
+    background-color: #999999;
+    color: white;
+}
+
+.whiteRow {
+    background-color:white;
+}
+
+/* Footer */
+#footer {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    padding: 5px;
+    text-align: center;
+    background-color: #006994;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 10px;
+}

@@ -1,0 +1,2 @@
+I thought this would be an easy assignment for ChatGPT and it could get it first try. I was wrong. I decided that I would change the CSS to fit my needs from there but I still asked ChatGPT questions. WebDev tools let me test the answers ChatGPT gave me and decide what look I liked best.
+There were a few spots where I felt I needed to add a div to fully achieve the look of the screenshot.
